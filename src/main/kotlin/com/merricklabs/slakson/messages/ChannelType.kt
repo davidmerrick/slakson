@@ -1,0 +1,12 @@
+package com.merricklabs.slakson.messages
+
+import com.fasterxml.jackson.annotation.JsonProperty
+import io.micronaut.core.annotation.Introspected
+
+@Introspected
+enum class ChannelType {
+    @JsonProperty("channel")
+    CHANNEL,
+    @JsonProperty("im")
+    IM
+}
