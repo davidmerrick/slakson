@@ -1,5 +1,5 @@
 group = "com.merricklabs.slakson"
-version = "1.0"
+version = "1.0.0"
 
 repositories {
     mavenCentral()
@@ -61,5 +61,22 @@ tasks {
 
     test {
         useJUnitPlatform()
+    }
+}
+
+publishing {
+    repositories {
+        maven {
+            url = uri("https://maven.pkg.github.com/davidmerrick/slakson")
+            credentials {
+                username = System.getenv("GITHUB_USERNAME")
+                password = System.getenv("GITHUB_TOKEN")
+            }
+        }
+    }
+    publications {
+        register("mavenJava", MavenPublication::class) {
+            from(components["java"])
+        }
     }
 }
