@@ -1,9 +1,9 @@
-package com.merricklabs.slakson.client
+package io.github.davidmerrick.slakson.client
 
-import com.merricklabs.slakson.SlackPaths.BASE_API_PATH
-import com.merricklabs.slakson.SlackPaths.POST_MESSAGE_ENDPOINT
-import com.merricklabs.slakson.config.SlackConfig
-import com.merricklabs.slakson.messages.CreateMessagePayload
+import io.github.davidmerrick.slakson.SlackPaths.BASE_API_PATH
+import io.github.davidmerrick.slakson.SlackPaths.POST_MESSAGE_ENDPOINT
+import io.github.davidmerrick.slakson.config.SlackConfig
+import io.github.davidmerrick.slakson.messages.CreateMessagePayload
 import io.micronaut.http.HttpRequest
 import io.micronaut.http.HttpStatus
 import io.micronaut.http.client.HttpClient

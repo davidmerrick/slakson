@@ -1,4 +1,4 @@
-package com.merricklabs.slakson.messages
+package io.github.davidmerrick.slakson.messages
 
 import io.micronaut.core.annotation.Introspected
 

@@ -1,4 +1,4 @@
-package com.merricklabs.slakson
+package io.github.davidmerrick.slakson
 
 object SlackPaths {
     const val BASE_API_PATH = "https://slack.com/api"
