@@ -15,7 +15,11 @@ data class EventCallbackMessage(
         @JsonProperty("api_app_id")
         val apiAppId: String,
         @JsonProperty("event")
-        val event: SlackEvent
+        val event: SlackEvent,
+        @JsonProperty("event_id")
+        val eventId: String,
+        @JsonProperty("event_time")
+        val eventTime: Int
 ) : SlackMessage {
     override val type = MessageType.EVENT_CALLBACK
 

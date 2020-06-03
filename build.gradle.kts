@@ -1,7 +1,7 @@
 import java.util.Date
 
 group = "io.github.davidmerrick.slakson"
-version = "2.0.1"
+version = "2.0.2"
 
 repositories {
     mavenCentral()
