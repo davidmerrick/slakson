@@ -9,9 +9,9 @@ Features:
 This package is published to GitHub's package repository.
 
 1. Rev the `version` in `build.gradle.kts`
-2. Set environment variables `GITHUB_USERNAME` and `GITHUB_TOKEN`
-3. Run `./gradlew publish`
+2. Set environment variables `BINTRAY_USERNAME` and `BINTRAY_API_KEY`
+3. Run `./gradlew bintrayUpload -PbintrayUser=$BINTRAY_USERNAME -PbintrayKey=$BINTRAY_API_KEY`
 
 # Reference
 
-* [Publishing to GitHub Package Repository](https://help.github.com/en/packages/using-github-packages-with-your-projects-ecosystem/configuring-gradle-for-use-with-github-packages)
+* https://medium.com/@sergio.igwt/publishing-a-kotlin-library-to-your-bintray-repo-using-gradle-kotlin-dsl-bdeaed54571a
