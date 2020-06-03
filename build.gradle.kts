@@ -1,5 +1,5 @@
 group = "io.github.davidmerrick.slakson"
-version = "2.0.0"
+version = "2.0.2"
 
 repositories {
     mavenCentral()
